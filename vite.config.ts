@@ -12,7 +12,7 @@ export default defineConfig({
         react(), mkcert(),
         VitePWA({
             registerType: 'autoUpdate',
-            includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png', 'pwa-192x192.png'], // 添加图标到缓存
+            includeAssets: ['favicon.svg', 'pwa-512x512.png'], // 添加图标到缓存
             workbox: {
                 globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,gif,svg,woff,woff2}'] // 缓存所有常见的静态资源
             },
@@ -23,22 +23,26 @@ export default defineConfig({
                 theme_color: '#ffffff',
                 icons: [
                     {
-                        src: 'pwa-192x192.png',
-                        sizes: '192x192',
+                        src: 'pwa-512x512.png',
+                        sizes: '512x512',
                         type: 'image/png',
                     }
                 ],
             },
         })
     ],
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "./src"),
+        },
+    },
     server: {
         https: {}, // 开启 HTTPS
         host: true,
         port: 3000,    // 将端口号修改为旧项目的端口号
     },
-    resolve: {
-        alias: {
-            "@": path.resolve(__dirname, "./src"),
-        },
+    preview: {
+        port: 3020, // 设置你的端口号
+        host:true // 允许外部访问
     },
 })
