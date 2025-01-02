@@ -2,10 +2,11 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+# Command
 
-这个项目放最小化的 React + TypeScript + Vite
+pnpm dev
 
-只要你想新创建一个项目 直接复制本项目 然后
+pnpm run build
 
-npm install
-npm run dev   
+pnpm preview --host
+
