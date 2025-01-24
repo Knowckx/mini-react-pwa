@@ -4,6 +4,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 # Command
 
+pnpm install
+
 pnpm dev
 
 pnpm run build
