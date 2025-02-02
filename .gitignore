@@ -25,3 +25,11 @@ dist-ssr
 
 
 pnpm-lock.yaml
+
+
+# yalc
+.yalc
+yalc.lock
+
+
+

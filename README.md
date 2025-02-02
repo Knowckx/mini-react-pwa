@@ -2,11 +2,16 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Command
 
-git clone https://github.com/Knowckx/viteinit.git appName
+
+# 安装
+git clone --depth 1 https://github.com/Knowckx/viteinit.git appName
+
+删掉 .git文件夹
 
 pnpm install
+
+# Command
 
 pnpm dev
 
