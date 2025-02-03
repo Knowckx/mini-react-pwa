@@ -11,6 +11,8 @@ git clone --depth 1 https://github.com/Knowckx/viteinit.git appName
 
 pnpm install
 
+替换 viteinit
+
 # Command
 
 pnpm dev
