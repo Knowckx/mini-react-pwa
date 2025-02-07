@@ -5,17 +5,19 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 
 # 安装
-git clone --depth 1 https://github.com/Knowckx/viteinit.git appName
+1.git clone --depth 1 https://github.com/Knowckx/viteinit.git appName
+2.删掉 .git文件夹
+3.pnpm install
 
-删掉 .git文件夹
 
-pnpm install
-
-替换 viteinit
 
 # Command
 
 pnpm dev
+
+
+# 打包
+替换 viteinit
 
 pnpm run build
 
