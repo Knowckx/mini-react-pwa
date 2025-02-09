@@ -12,15 +12,16 @@ export default defineConfig({
         react(), mkcert(),
         VitePWA({
             registerType: 'autoUpdate',
-            includeAssets: ['favicon.svg', 'pwa-512x512.png'], // 添加图标到缓存
+            includeAssets: ['pwa-512x512.png'], // 添加图标到缓存
             workbox: {
                 globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,gif,svg,woff,woff2}'] // 缓存所有常见的静态资源
             },
             manifest: {
-                name: 'My PWA App',
+                name: 'MyPWA',
                 short_name: 'MyPWA',
-                description: 'My PWA App Description',
+                description: 'Description',
                 theme_color: '#ffffff',
+                // orientation: "landscape-primary", // 优先横屏
                 icons: [
                     {
                         src: 'pwa-512x512.png',
@@ -38,8 +39,8 @@ export default defineConfig({
     },
     server: {
         https: {}, // 开启 HTTPS
-        host: true,
         port: 3000,    // 将端口号修改为旧项目的端口号
+        host: true,
     },
     preview: {
         port: 3020, // 设置你的端口号
