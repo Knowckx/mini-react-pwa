@@ -3,13 +3,12 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import mkcert from 'vite-plugin-mkcert';
 import path from "path"
+import tailwindcss from '@tailwindcss/vite'
 
-
-// https://vitejs.dev/config/
 export default defineConfig({
     base: '/',
     plugins: [
-        react(), mkcert(),
+        react(), mkcert(), tailwindcss(),
         VitePWA({
             registerType: 'autoUpdate',
             includeAssets: ['pwa-512x512.png'], // 添加图标到缓存
