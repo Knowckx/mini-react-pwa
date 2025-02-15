@@ -32,7 +32,7 @@ const tabs = [
   ];
 
 
-export function DemoApp() {
+export function NavigatorApp() {
     return (
         <>
           <BottomNavigator tabs={tabs} />
