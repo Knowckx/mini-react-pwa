@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
-    "@tailwindcss/vite": "^4.0.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "infa": "file:.yalc/infa",
     "lucide-react": "^0.475.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
+    "@tailwindcss/vite": "^4.0.6",
     "@types/node": "^22.13.4",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",

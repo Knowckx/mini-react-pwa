@@ -6,7 +6,6 @@ import path from "path"
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-    base: '/',
     plugins: [
         react(), mkcert(), tailwindcss(),
         VitePWA({
@@ -31,6 +30,7 @@ export default defineConfig({
             },
         })
     ],
+    base: '/',
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
