@@ -15,7 +15,7 @@ First Page is a bottom-navigation bar.
 
 # Demo
 
-![Demo](pic/gif-demo.gif)
+<img src="pic/gif-demo.gif" alt="Demo" width="600">
 
 # Installation Requirements
 Nodejs + tailwindcss4.0 + shadcn-ui
