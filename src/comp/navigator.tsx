@@ -1,41 +1,67 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
-import { HomeIcon, SettingsIcon } from "lucide-react"; // Example icons
+import { HomeIcon, SettingsIcon, Gamepad } from "lucide-react";
 import { BottomNavigator } from "infa";
 
 
-const TableApp1: React.FC = () =>{
+const TableHome: React.FC = () => {
     const [count, setCount] = useState(0)
     useEffect(() => {
         console.log(`count is `, count)
     }, [count]);
     return (
         <>
-            <h1 className="text-3xl font-bold underline">
+            <h1 className="text-3xl font-bold underline text-center">
                 Hello world!
             </h1>
-            <div className="card">
-                <Button variant="outline" onClick={() => setCount((count) => count + 1)}><Mail /> count is {count}</Button>
+            <div className="flex items-center justify-center h-screen">
+                <div className="bg-lightblue w-52 h-24 text-center">
+                    <Button variant="outline" onClick={() => setCount((count) => count + 1)}><Mail /> count is {count}</Button>
+                </div>
             </div>
         </>
     )
 }
 
-const TableApp2: React.FC = () => <div>Settings TableApp2</div>;
-const TableApp3: React.FC = () => <div>Settings TableApp3</div>;
+interface CenterAppProps {
+    isShow?: boolean
+    comp: React.FC
+}
+
+const CenterApp: React.FC<CenterAppProps> = ({ isShow, comp: Comp }) => {
+    if (isShow === false) return null;
+    return (
+        <div className="flex items-center justify-center h-screen">
+            <div className="bg-lightblue w-52 h-24 text-center">
+                <Comp />
+            </div>
+        </div>
+    )
+}
+
+const TodoGameComponent: React.FC = () => (
+    <div>Todo.. Game Component</div>
+);
+
+const TodoSettingsComponent: React.FC = () => (
+    <div>Todo.. Settings..</div>
+);
+
+const TableGame: React.FC = () => <CenterApp comp={TodoGameComponent} />;
+const TableSetting: React.FC = () => <CenterApp comp={TodoSettingsComponent} />;
 
 const tabs = [
-    { label: "Home", icon: HomeIcon, component: TableApp1 },
-    { label: "Lable", component: TableApp2 },
-    { label: "Settings", icon: SettingsIcon, component: TableApp3 },
-  ];
+    { label: "Home", icon: HomeIcon, component: TableHome },
+    { label: "Game", icon: Gamepad, component: TableGame },
+    { label: "Settings", icon: SettingsIcon, component: TableSetting },
+];
 
 
 export function NavigatorApp() {
     return (
         <>
-          <BottomNavigator tabs={tabs} />
+            <BottomNavigator tabs={tabs} />
         </>
     )
 }

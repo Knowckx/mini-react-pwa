@@ -1,6 +1,21 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal front-end project template that uses the following technology stack:
+
+- React18
+- TypeScript
+- Vite
+- pnpm
+- tailwindcss4.0
+- shadcn-ui
+- lucide-icon
+- PWA
+- https
+
+Main UI Page is a BottomNavigator.
+
+
+
 
 
 
