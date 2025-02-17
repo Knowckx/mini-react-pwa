@@ -38,11 +38,11 @@ export default defineConfig({
     },
     server: {
         https: {}, // 开启 HTTPS
-        port: 3000,    // 将端口号修改为旧项目的端口号
+        port: 3000,
         host: true,
     },
     preview: {
-        port: 3020, // 设置你的端口号
-        host:true // 允许外部访问
+        port: 7000,
+        host:true  // 允许外部访问
     },
 })

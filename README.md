@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Minimal React template
 
-A minimal front-end project template that uses the following technology stack:
+A minimal Front-end project template that has contained the following technology stack:
 
 - React18
 - TypeScript
@@ -8,34 +8,30 @@ A minimal front-end project template that uses the following technology stack:
 - pnpm
 - tailwindcss4.0
 - shadcn-ui
-- lucide-icon
 - PWA
 - https
 
-Main UI Page is a BottomNavigator.
+First Page is a bottom-navigation bar.
+
+# Demo
+
+![Demo](pic/gif-demo.gif)
+
+# Installation Requirements
+Nodejs + tailwindcss4.0 + shadcn-ui
 
 
-
-
-
-
-# 安装
-1.git clone --depth 1 https://github.com/Knowckx/viteinit.git appName
-2.删掉 .git文件夹
+# instail
+1.git clone --depth 1 https://github.com/Knowckx/viteinit.git yourAppName
+2.delete .git folder
 3.pnpm install
 
-
-
-# Command
+## run in dev
 
 pnpm dev
 
-
-# 打包
-替换 viteinit
+## Build and run (Https+PWA support)
 
 pnpm run build
 
 pnpm preview --host
-
-直接打开APP，刷新页面进行更新

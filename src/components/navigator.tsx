@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
 import { HomeIcon, SettingsIcon, Gamepad } from "lucide-react";
-import { BottomNavigator } from "infa";
+import { BottomNavigator } from "./BottomNavigater";
 
 
 const TableHome: React.FC = () => {
@@ -12,9 +12,9 @@ const TableHome: React.FC = () => {
     }, [count]);
     return (
         <>
-            <h1 className="text-3xl font-bold underline text-center">
-                Hello world!
-            </h1>
+            <h2 className="text-2xl font-bold underline text-center">
+                Minimal React template
+            </h2>
             <div className="flex items-center justify-center h-screen">
                 <div className="bg-lightblue w-52 h-24 text-center">
                     <Button variant="outline" onClick={() => setCount((count) => count + 1)}><Mail /> count is {count}</Button>
