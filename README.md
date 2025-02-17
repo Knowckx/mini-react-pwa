@@ -21,11 +21,14 @@ First Page is a bottom-navigation bar.
 Nodejs + tailwindcss4.0 + shadcn-ui
 
 
-# instail
+# How To Use
 1.git clone --depth 1 https://github.com/Knowckx/viteinit.git yourAppName
+
 2.delete .git folder
+
 3.pnpm install
 
+# Command
 ## run in dev
 
 pnpm dev
