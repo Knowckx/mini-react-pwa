@@ -1,6 +1,6 @@
 # Minimal React template
 
-A minimal Front-end project template that has contained the following technology stack:
+A minimal React.js template that includes the following technology stack:
 
 - React18
 - TypeScript
@@ -33,7 +33,7 @@ Nodejs + tailwindcss4.0 + shadcn-ui
 
 pnpm dev
 
-## Build and run (Https+PWA support)
+## Build and run (support Https+PWA)
 
 pnpm run build
 
