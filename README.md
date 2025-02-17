@@ -22,7 +22,7 @@ Nodejs + tailwindcss4.0 + shadcn-ui
 
 
 # How To Use
-1.git clone --depth 1 https://github.com/Knowckx/viteinit.git yourAppName
+1.git clone --depth 1 https://github.com/Knowckx/mini-react-pwa.git yourAppName
 
 2.delete .git folder
 
