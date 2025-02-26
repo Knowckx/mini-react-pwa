@@ -43,6 +43,7 @@ export const BottomNavigator: FC<BottomNavigatorProps> = ({ tabs }) => {
     );
 };
 
+
 interface OneTabBarProps {
     tabs: Tab[];
     onTabChange: (tabValue: string) => void;

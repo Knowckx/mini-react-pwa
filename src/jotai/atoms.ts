@@ -1,3 +1,6 @@
 import { atom } from 'jotai';
 
-export const SelectAtom = atom<{idx:number, name: string} | null>(null);
+export const NumAtom = atom({ idx: 0, name: "" });
+
+
+

@@ -19,6 +19,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      '@typescript-eslint/no-explicit-any': 'off', // 关闭 any 类型的警告
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
