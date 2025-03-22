@@ -15,8 +15,8 @@ export default defineConfig({
                 globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,gif,svg,woff,woff2}'] // 缓存所有常见的静态资源
             },
             manifest: {
-                name: 'MyPWA',
-                short_name: 'MyPWA',
+                name: 'mini-react-pwa',
+                short_name: 'mini-react-pwa',
                 description: 'Description',
                 theme_color: '#ffffff',
                 // orientation: "landscape-primary", // 优先横屏

@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button"
-import { BadgeDollarSign, Mail } from "lucide-react"
-import { Calculator, SettingsIcon } from "lucide-react";
-import { RecruitApp } from "@/components/RecruitApp";
-import { BottomNavigator } from "infa";
+import { Mail } from "lucide-react"
 
 
-const TableHome: React.FC = () => {
+export const TableHome: React.FC = () => {
     const [count, setCount] = useState(0)
     useEffect(() => {
         console.log(`count is `, count)
@@ -45,18 +42,4 @@ const TodoSettingsComponent: React.FC = () => (
     <div>Todo.. Settings..</div>
 );
 
-const TableSetting: React.FC = () => <CenterApp comp={TodoSettingsComponent} />;
-
-const tabs = [
-    { label: "Calculator", icon: Calculator, component: TableHome },
-    { label: "ShopCalc", icon: BadgeDollarSign, component: RecruitApp },
-    { label: "Settings", icon: SettingsIcon, component: TableSetting },
-];
-
-export function NavigatorApp() {
-    return (
-        <>
-            <BottomNavigator tabs={tabs} />
-        </>
-    )
-}
+export const TableSetting: React.FC = () => <CenterApp comp={TodoSettingsComponent} />;
