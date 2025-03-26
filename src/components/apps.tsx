@@ -1,26 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
-
-
-export const TableHome: React.FC = () => {
-    const [count, setCount] = useState(0)
-    useEffect(() => {
-        console.log(`count is `, count)
-    }, [count]);
-    return (
-        <>
-            <h2 className="text-2xl font-bold underline text-center">
-                Minimal React template
-            </h2>
-            <div className="flex items-center justify-center h-screen">
-                <div className="bg-lightblue w-52 h-24 text-center">
-                    <Button variant="outline" onClick={() => setCount((count) => count + 1)}><Mail /> count is {count}</Button>
-                </div>
-            </div>
-        </>
-    )
-}
+import React from "react";
 
 interface CenterAppProps {
     isShow?: boolean
@@ -30,7 +8,7 @@ interface CenterAppProps {
 const CenterApp: React.FC<CenterAppProps> = ({ isShow, comp: Comp }) => {
     if (isShow === false) return null;
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center">
             <div className="bg-lightblue w-52 h-24 text-center">
                 <Comp />
             </div>

@@ -38,11 +38,11 @@ export default defineConfig({
     },
     server: {
         https: {}, // 开启 HTTPS
-        port: 3000,
+        port: 12010,
         host: true,
     },
     preview: {
-        port: 22006,
+        port: 22010,
         host:true  // 允许外部访问
     },
 })
