@@ -2,7 +2,7 @@
 
 A minimal React.js template that includes the following technology stack:
 
-- React18
+- React19
 - TypeScript
 - Vite
 - pnpm
